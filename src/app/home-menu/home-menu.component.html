@@ -1,0 +1,113 @@
+<div class="homeNavBar" *ngIf="showHomeNav" (click)="toggleVis()">
+	<div class="homeNavText">
+		<h2>Home</h2>
+	</div>
+	<div class="bottomAlignNavDiv">
+		<div class="homeNavButtonContainer">
+			<div class="homeNavButton"></div>
+		</div>
+	</div>
+</div>
+
+<div class="homeItems" *ngIf="showHomeMenu">
+	<div class="homeTallDiv">
+		<div class="cocaColaTop">
+		<img src="assets/img/Coca-cola.svg" width="229px">
+		</div>
+		<div class="bottomAlignDiv">
+			<div class="selectionContainerDiv">
+				<div class="selectionIcon"></div>
+			</div>
+			<div class="lineDiv"></div>
+			<div class="flavorContainerDiv">
+				<h2>Flavors</h2>
+			</div>
+			<div class="flavorIconContainerDiv">
+				<div class="flavorIcon"></div>
+			</div>
+		</div>	
+		
+	</div>
+	<div class="homeTallDiv">
+		<div class="dietCokeTop">
+		<img src="assets/img/Diet-Coke.png" width="229px">
+		</div>
+		<div class="bottomAlignDiv">
+			<div class="selectionContainerDiv">
+				<div class="selectionIcon"></div>
+			</div>
+			<div class="lineDiv"></div>
+			<div class="flavorContainerDiv">
+				<h2>Flavors</h2>
+			</div>
+			<div class="flavorIconContainerDiv">
+				<div class="flavorIcon"></div>
+			</div>
+		</div>	
+	</div>
+	<div class="homeTallDiv">
+		<div class="labelDiv">
+			<h2>Water</h2>
+		</div>
+		<div class="bottomAlignDiv">
+			<div class="selectionContainerDiv">
+				<div class="selectionIcon"></div>
+			</div>
+		</div>	
+	</div>
+	<div class="homeTallDiv">
+		<div class="LabelDiv">
+			<h2>Restaurant Branding</h2>
+		</div>
+	</div>
+	<div class="floatClear"></div>
+	<div class="homeShortDiv" (click)="toggleVis()">
+		<div class="categoryName labelDiv">
+			<h2>Caffeinated</h2>
+		</div>
+		<div class="bottomAlignDiv">
+			<div class="flavorIconContainerDiv labelDiv">
+				<div class="flavorIcon"></div>
+			</div>
+		</div>
+	</div>
+	<div class="homeShortDiv" (click)="toggleVis()">
+		<div class="categoryName labelDiv">
+			<h2>Caffeine Free</h2>
+		</div>
+		<div class="bottomAlignDiv">
+			<div class="flavorIconContainerDiv">
+				<div class="flavorIcon"></div>
+			</div>
+		</div>
+	</div>
+	<div class="homeShortDiv" (click)="toggleVis()">
+		<div class="categoryName labelDiv">
+			<h2>Uncarbonated</h2>
+		</div>
+		<div class="bottomAlignDiv">
+			<div class="flavorIconContainerDiv">
+				<div class="flavorIcon"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="sodaSelectDiv" *ngIf="showSodaSelect">
+  	<div class="sodaSelectTitle">
+ 		<h2>Caffeinated</h2> 
+  	</div>
+	<div class="spacerDiv">
+ 	</div>
+  	<div class="sodaItem" *ngFor="let soda of sodas">
+  		<div class="sodaImage">
+  			<img src="assets/img/{{soda.imgUrl}}">
+  		</div>
+  		<div class="bottomAlignDiv">
+			<div class="flavorIconContainerDiv">
+				<div class="flavorIcon"></div>
+			</div>
+		</div>
+	</div>
+</div>
